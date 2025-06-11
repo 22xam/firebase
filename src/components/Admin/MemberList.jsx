@@ -1,8 +1,8 @@
 jsx
 import React, { useState, useEffect } from 'react';
-import { fetchMembers, deleteMember } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberService.js'; // Usar ruta absoluta
+import { fetchMembers, deleteMember } from '../../services/memberService'; // Usar ruta relativa
 
-const MemberList = () => {
+const MemberList = ({ onEdit }) => {
   const [members, setMembers] = useState([]); // Accept onEdit prop
 
   useEffect(() => {

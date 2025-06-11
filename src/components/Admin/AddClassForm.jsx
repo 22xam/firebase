@@ -1,6 +1,6 @@
 jsx
 import React, { useState } from 'react';
-import { classService } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/classService.js';
+import { classService } from '../../services/classService';
 
 function AddClassForm({ onClassAdded, onCancel }) {
   const [className, setClassName] = useState('');

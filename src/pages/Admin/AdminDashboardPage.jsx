@@ -60,14 +60,14 @@ export default EditMemberForm;
 jsx
 import React from 'react';
 import { useState } from 'react';
-import MemberList from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/MemberList.jsx';
-import AddMemberForm from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/AddMemberForm.jsx';
-import EditMemberForm from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/EditMemberForm.jsx';
-import ClassList from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/ClassList.jsx';
-import AddClassForm from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/AddClassForm.jsx';
-import EditClassForm from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/EditClassForm.jsx';
-import ScheduleManager from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/ScheduleManager.jsx';
-import Reports from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Admin/Reports.jsx';
+import MemberList from '../../components/Admin/MemberList.jsx';
+import AddMemberForm from '../../components/Admin/AddMemberForm.jsx';
+import EditMemberForm from '../../components/Admin/EditMemberForm.jsx';
+import ClassList from '../../components/Admin/ClassList.jsx';
+import AddClassForm from '../../components/Admin/AddClassForm.jsx';
+import EditClassForm from '../../components/Admin/EditClassForm.jsx';
+import ScheduleManager from '../../components/Admin/ScheduleManager.jsx';
+import Reports from '../../components/Admin/Reports.jsx';
 
 function AdminDashboardPage() {
   const [showAddMember, setShowAddMember] = useState(false);

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import MemberProfile from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Member/MemberProfile.jsx';
-import AvailableClasses from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Member/AvailableClasses.jsx';
-import MemberSchedule from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/components/Member/MemberSchedule.jsx';
-import { subscribeUserToPush } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/notificationService.js';
+import MemberProfile from '../../components/Member/MemberProfile.jsx';
+import AvailableClasses from '../../components/Member/AvailableClasses.jsx';
+import MemberSchedule from '../../components/Member/MemberSchedule.jsx';
+import { subscribeUserToPush } from '../../services/notificationService.js';
 
 
 

@@ -1,6 +1,6 @@
 jsx
 import React, { useState } from 'react';
-import { addMember } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberService.js';
+import { addMember } from '../../services/memberService.js';
 
 function AddMemberForm() {
   const [formData, setFormData] = useState({

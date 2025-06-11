@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchMemberSchedule } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberDashboardService.js';
+import { fetchMemberSchedule } from '../../services/memberDashboardService.js';
 
 function MemberSchedule() {
   const [memberClasses, setMemberClasses] = useState([]);

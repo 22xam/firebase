@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getMemberProfile } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberDashboardService.js';
+import { getMemberProfile } from '../../services/memberDashboardService';
 
 function MemberProfile() {
   const [memberProfile, setMemberProfile] = useState(null);

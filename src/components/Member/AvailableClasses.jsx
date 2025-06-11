@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchAvailableClasses, enrollInClass } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberDashboardService.js'; // Use absolute path
+import { fetchAvailableClasses, enrollInClass } from '../../services/memberDashboardService.js'; // Use relative path
 
 function AvailableClasses() {
   const [availableClasses, setAvailableClasses] = useState([]);
@@ -46,7 +46,7 @@ function AvailableClasses() {
                 </button>
               </li>
             ))
-          ) : (
+          ) : (  // This part seems duplicated, will keep the first one for now
             <p>No classes available at this time.</p>
           )}
         </ul>

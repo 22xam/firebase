@@ -2,7 +2,7 @@ jsx
 import React, { useState, useEffect } from 'react';
 
 // Use absolute path
-import { classService } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/classService.js'; // Use absolute path
+import { classService } from '../../services/classService.js'; // Use absolute path
 function EditClassForm({ classData, onSave, onCancel }) {
   const [formData, setFormData] = useState({
     name: '',

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchClasses, deleteClass } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/classService.js'; // Usar ruta absoluta
+import { fetchClasses, deleteClass } from '../../services/classService';
 
 function ClassList({ onEdit }) {
   const [classes, setClasses] = useState([]);

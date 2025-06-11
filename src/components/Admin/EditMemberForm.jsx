@@ -1,7 +1,7 @@
 jsx
 import React, { useState, useEffect } from 'react';
 
-import { updateMember } from '/home/runner/work/Gym-Management-PWA/Gym-Management-PWA/src/services/memberService.js';
+import { updateMember } from '../../services/memberService.js';
 function EditMemberForm({ member, onSave, onCancel }) {
   const [formData, setFormData] = useState({
     name: '',
