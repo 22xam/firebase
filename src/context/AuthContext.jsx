@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-const AuthContext = createContext(null);
+const AuthContext = createContext({ user: null, login: () => {}, logout: () => {} });
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -12,7 +12,9 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const login = (userData) => {
+  // Expects userData to include a 'role' property
+  const login = (userData) => { 
+    // Ensure userData has a role, default to 'member' if not provided
     setUser(userData);
     localStorage.setItem('user', JSON.stringify(userData));
   };

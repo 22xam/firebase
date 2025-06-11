@@ -33,3 +33,25 @@ self.addEventListener('fetch', (event) => {
     caches.match(event.request).then((response) => response || fetch(event.request))
   );
 });
+
+// Evento 'push': Se ejecuta cuando se recibe una notificación push.
+self.addEventListener('push', (event) => {
+  const options = {
+    body: event.data.text(),
+    icon: '/icons/icon-192x192.png', // Asegúrate de tener un ícono en tu carpeta public
+    badge: '/icons/icon-192x192.png', // Ícono pequeño
+    // Puedes añadir más opciones como vibrate, sound, data, actions, etc.
+  };
+
+  event.waitUntil(
+    self.registration.showNotification('Gym Management PWA', options)
+  );
+});
+
+// Evento 'notificationclick': Se ejecuta cuando el usuario hace clic en una notificación.
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+
+  // Puedes definir una acción al hacer clic, por ejemplo, abrir una URL.
+  event.waitUntil(clients.openWindow('/dashboard')); // Redirige al dashboard al hacer clic
+});
