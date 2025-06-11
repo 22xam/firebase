@@ -50,6 +50,6 @@ function MemberProfile() {
       {/* Add more profile details as needed */}
     </div>
   );
-}
+ }
 
 export default MemberProfile;

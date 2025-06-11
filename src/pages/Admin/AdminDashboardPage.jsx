@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import React from 'react';
-import { useState } from 'react';
-import MemberList from '../../components/Admin/MemberList.jsx';
+import MemberList from '../../components/Admin/MemberList.jsx'; // Keep this import
 import AddMemberForm from '../../components/Admin/AddMemberForm.jsx';
 import EditMemberForm from '../../components/Admin/EditMemberForm.jsx';
 import ClassList from '../../components/Admin/ClassList.jsx';
