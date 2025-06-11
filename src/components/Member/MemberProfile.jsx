@@ -46,10 +46,11 @@ function MemberProfile() {
               <p className="text-lg font-semibold">{memberProfile.endDate ? new Date(memberProfile.endDate).toLocaleDateString() : 'N/A'}</p>
         </div>
           </>
-        )}
+ )
+ }
       {/* Add more profile details as needed */}
     </div>
-  );
+  ) }
  }
 
 export default MemberProfile;
