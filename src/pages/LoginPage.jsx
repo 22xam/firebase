@@ -24,7 +24,7 @@ function LoginPage() {
               <input
                 type="email"
                 placeholder="Correo electrónico"
-                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600 text-black"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -35,7 +35,7 @@ function LoginPage() {
               <input
                 type="password"
                 placeholder="Contraseña"
-                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600 text-black"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
